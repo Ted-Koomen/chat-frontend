@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Amplify, { Auth } from 'aws-amplify';
+
+import awsConfig from './aws-exports';
 import './index.css';
-import App from './App';
+import AuthenticationProvider from './components/AuthenticationProvider'
 import reportWebVitals from './reportWebVitals';
+
+Amplify.configure(awsConfig);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AuthenticationProvider />
   </React.StrictMode>,
   document.getElementById('root')
 );

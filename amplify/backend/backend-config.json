@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "messengerfrontend69b5b175": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
